@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B4F14DE2371DD970051DF21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4F14DD2371DD970051DF21 /* AppDelegate.swift */; };
+		6B4F14E72371DD990051DF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4F14E62371DD990051DF21 /* Assets.xcassets */; };
+		6B4F14EA2371DD990051DF21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4F14E82371DD990051DF21 /* LaunchScreen.storyboard */; };
+		6B4F14F22371DE2F0051DF21 /* ShaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4F14F12371DE2F0051DF21 /* ShaderController.swift */; };
+		6B4F14F72371DE890051DF21 /* GDTextureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4F14F52371DE890051DF21 /* GDTextureLoader.swift */; };
+		6B4F14F82371DE890051DF21 /* GDShader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4F14F62371DE890051DF21 /* GDShader.swift */; };
+		6B4F14FB2371DEB40051DF21 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4F14FA2371DEB40051DF21 /* OpenGLES.framework */; };
+		6B4F14FE2371DEEC0051DF21 /* NSArray+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4F14FD2371DEEC0051DF21 /* NSArray+Extension.swift */; };
+		6B4F15032371DF420051DF21 /* Burr.fs in Resources */ = {isa = PBXBuildFile; fileRef = 6B4F15012371DF420051DF21 /* Burr.fs */; };
+		6B4F15042371DF420051DF21 /* Burr.vs in Resources */ = {isa = PBXBuildFile; fileRef = 6B4F15022371DF420051DF21 /* Burr.vs */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B4F14DA2371DD970051DF21 /* GDTiktokEffet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDTiktokEffet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4F14DD2371DD970051DF21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B4F14E62371DD990051DF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B4F14E92371DD990051DF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B4F14EB2371DD990051DF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B4F14F12371DE2F0051DF21 /* ShaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderController.swift; sourceTree = "<group>"; };
+		6B4F14F52371DE890051DF21 /* GDTextureLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDTextureLoader.swift; sourceTree = "<group>"; };
+		6B4F14F62371DE890051DF21 /* GDShader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDShader.swift; sourceTree = "<group>"; };
+		6B4F14FA2371DEB40051DF21 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		6B4F14FD2371DEEC0051DF21 /* NSArray+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+Extension.swift"; sourceTree = "<group>"; };
+		6B4F15012371DF420051DF21 /* Burr.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Burr.fs; sourceTree = "<group>"; };
+		6B4F15022371DF420051DF21 /* Burr.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Burr.vs; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B4F14D72371DD970051DF21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4F14FB2371DEB40051DF21 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B4F14D12371DD970051DF21 = {
+			isa = PBXGroup;
+			children = (
+				6B4F14DC2371DD970051DF21 /* GDTiktokEffet */,
+				6B4F14DB2371DD970051DF21 /* Products */,
+				6B4F14F92371DEB40051DF21 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B4F14DB2371DD970051DF21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B4F14DA2371DD970051DF21 /* GDTiktokEffet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B4F14DC2371DD970051DF21 /* GDTiktokEffet */ = {
+			isa = PBXGroup;
+			children = (
+				6B4F14FF2371DF1A0051DF21 /* EffectiveModule */,
+				6B4F14F32371DE6D0051DF21 /* CoreMudule */,
+				6B4F14DD2371DD970051DF21 /* AppDelegate.swift */,
+				6B4F14E62371DD990051DF21 /* Assets.xcassets */,
+				6B4F14E82371DD990051DF21 /* LaunchScreen.storyboard */,
+				6B4F14EB2371DD990051DF21 /* Info.plist */,
+			);
+			path = GDTiktokEffet;
+			sourceTree = "<group>";
+		};
+		6B4F14F32371DE6D0051DF21 /* CoreMudule */ = {
+			isa = PBXGroup;
+			children = (
+				6B4F14FC2371DEEC0051DF21 /* Extension */,
+				6B4F14F42371DE760051DF21 /* GDGLTool */,
+			);
+			path = CoreMudule;
+			sourceTree = "<group>";
+		};
+		6B4F14F42371DE760051DF21 /* GDGLTool */ = {
+			isa = PBXGroup;
+			children = (
+				6B4F14F62371DE890051DF21 /* GDShader.swift */,
+				6B4F14F52371DE890051DF21 /* GDTextureLoader.swift */,
+			);
+			path = GDGLTool;
+			sourceTree = "<group>";
+		};
+		6B4F14F92371DEB40051DF21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B4F14FA2371DEB40051DF21 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B4F14FC2371DEEC0051DF21 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6B4F14FD2371DEEC0051DF21 /* NSArray+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6B4F14FF2371DF1A0051DF21 /* EffectiveModule */ = {
+			isa = PBXGroup;
+			children = (
+				6B4F15002371DF260051DF21 /* Shaders */,
+				6B4F14F12371DE2F0051DF21 /* ShaderController.swift */,
+			);
+			path = EffectiveModule;
+			sourceTree = "<group>";
+		};
+		6B4F15002371DF260051DF21 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				6B4F15022371DF420051DF21 /* Burr.vs */,
+				6B4F15012371DF420051DF21 /* Burr.fs */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B4F14D92371DD970051DF21 /* GDTiktokEffet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B4F14EE2371DD990051DF21 /* Build configuration list for PBXNativeTarget "GDTiktokEffet" */;
+			buildPhases = (
+				6B4F14D62371DD970051DF21 /* Sources */,
+				6B4F14D72371DD970051DF21 /* Frameworks */,
+				6B4F14D82371DD970051DF21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GDTiktokEffet;
+			productName = GDTiktokEffet;
+			productReference = 6B4F14DA2371DD970051DF21 /* GDTiktokEffet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B4F14D22371DD970051DF21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = gdAOE;
+				TargetAttributes = {
+					6B4F14D92371DD970051DF21 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 6B4F14D52371DD970051DF21 /* Build configuration list for PBXProject "GDTiktokEffet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B4F14D12371DD970051DF21;
+			productRefGroup = 6B4F14DB2371DD970051DF21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B4F14D92371DD970051DF21 /* GDTiktokEffet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B4F14D82371DD970051DF21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4F15032371DF420051DF21 /* Burr.fs in Resources */,
+				6B4F15042371DF420051DF21 /* Burr.vs in Resources */,
+				6B4F14EA2371DD990051DF21 /* LaunchScreen.storyboard in Resources */,
+				6B4F14E72371DD990051DF21 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B4F14D62371DD970051DF21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4F14F22371DE2F0051DF21 /* ShaderController.swift in Sources */,
+				6B4F14F72371DE890051DF21 /* GDTextureLoader.swift in Sources */,
+				6B4F14FE2371DEEC0051DF21 /* NSArray+Extension.swift in Sources */,
+				6B4F14DE2371DD970051DF21 /* AppDelegate.swift in Sources */,
+				6B4F14F82371DE890051DF21 /* GDShader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B4F14E82371DD990051DF21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B4F14E92371DD990051DF21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B4F14EC2371DD990051DF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B4F14ED2371DD990051DF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B4F14EF2371DD990051DF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GDTiktokEffet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gd.aoe.GDTiktokEffet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6B4F14F02371DD990051DF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GDTiktokEffet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gd.aoe.GDTiktokEffet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B4F14D52371DD970051DF21 /* Build configuration list for PBXProject "GDTiktokEffet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4F14EC2371DD990051DF21 /* Debug */,
+				6B4F14ED2371DD990051DF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B4F14EE2371DD990051DF21 /* Build configuration list for PBXNativeTarget "GDTiktokEffet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4F14EF2371DD990051DF21 /* Debug */,
+				6B4F14F02371DD990051DF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B4F14D22371DD970051DF21 /* Project object */;
+}

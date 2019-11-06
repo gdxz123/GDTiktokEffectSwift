@@ -6,7 +6,7 @@ varying vec2 textureCoordVarying;
 const float PI = 3.1415926;
 
 float random(float n) {
-    return fract(sin(n) * 43758.5453123);
+    return fract(sin(n) * 40000.0);
 }
 
 void main(void) {

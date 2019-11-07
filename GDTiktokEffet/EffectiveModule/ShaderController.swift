@@ -14,6 +14,11 @@ struct ScenceVertex {
     var textureCoord: GLKVector2
 }
 
+enum FilterEffect: String {
+    case filterBurr = "Burr"
+    case filterSoul = "Soul"
+}
+
 class ShaderController: UIViewController {
     private let context: EAGLContext = EAGLContext.init(api: .openGLES3)!
     private var renderParam: GDRenderBufferParam = GDRenderBufferParam.init()
@@ -35,12 +40,43 @@ class ShaderController: UIViewController {
         self.renderParam = GDShader.createEALayer(context: self.context, view: self.view)
         self.createTextureUI()
         self.startAnimateAction()
+        
+        self.createEffectUI()
     }
     
     deinit {
         if EAGLContext.current() == self.context {
             EAGLContext.setCurrent(nil)
         }
+    }
+    
+    // UI
+    private func createEffectUI() {
+        let bWidth: CGFloat = 60.0
+        let oriY: CGFloat = self.view.bounds.height - bWidth - 40
+        
+        let burrButton: UIButton = UIButton.init(frame: CGRect.init(x: 10, y: oriY, width: bWidth, height: bWidth))
+        burrButton.backgroundColor = UIColor.init(red: 216/255.0, green: 80/255.0, blue: 16/255.0, alpha: 1.0)
+        burrButton.setTitle(FilterEffect.filterBurr.rawValue, for: .normal)
+        burrButton.addTarget(self, action: #selector(onBurrAction), for: .touchUpInside)
+        self.view.addSubview(burrButton)
+        
+        let soulButton: UIButton = UIButton.init(frame: CGRect.init(x: bWidth + 20, y: oriY, width: bWidth, height: bWidth))
+        soulButton.backgroundColor = UIColor.init(red: 216/255.0, green: 80/255.0, blue: 16/255.0, alpha: 1.0)
+        soulButton.setTitle(FilterEffect.filterSoul.rawValue, for: .normal)
+        soulButton.addTarget(self, action: #selector(onSoulAction), for: .touchUpInside)
+        self.view.addSubview(soulButton)
+    }
+    
+    // Action
+    @objc private func onBurrAction() {
+        self.startTimeInterval = 0
+        self.program = self.programWithShaderName(shaderName: FilterEffect.filterBurr.rawValue)
+    }
+    
+    @objc private func onSoulAction() {
+        self.startTimeInterval = 0
+        self.program = self.programWithShaderName(shaderName: FilterEffect.filterSoul.rawValue)
     }
     
     // private method
@@ -83,7 +119,7 @@ class ShaderController: UIViewController {
             glBufferData(GLenum(GL_ARRAY_BUFFER), self.vertices.size(), self.vertices, GLenum(GL_STATIC_DRAW))
             self.vertexBuffer = vertexBuffer
             
-            self.program = self.programWithShaderName(shaderName: "Burr")
+            self.program = self.programWithShaderName(shaderName: FilterEffect.filterBurr.rawValue)
             if let program = self.program {
                 glUseProgram(program)
                 
@@ -124,8 +160,8 @@ class ShaderController: UIViewController {
     }
     
     private func programWithShaderName(shaderName: String) -> GLuint {
-        let vShader: GLuint = GDShader.compileShader(name: "Burr", type: GLenum(GL_VERTEX_SHADER))
-        let fShader: GLuint = GDShader.compileShader(name: "Burr", type: GLenum(GL_FRAGMENT_SHADER))
+        let vShader: GLuint = GDShader.compileShader(name: shaderName, type: GLenum(GL_VERTEX_SHADER))
+        let fShader: GLuint = GDShader.compileShader(name: shaderName, type: GLenum(GL_FRAGMENT_SHADER))
         
         let program: GLuint = glCreateProgram()
         glAttachShader(program, vShader)

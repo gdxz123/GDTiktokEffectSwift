@@ -17,6 +17,8 @@
 		6B4F14FE2371DEEC0051DF21 /* NSArray+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4F14FD2371DEEC0051DF21 /* NSArray+Extension.swift */; };
 		6B4F15032371DF420051DF21 /* Burr.fs in Resources */ = {isa = PBXBuildFile; fileRef = 6B4F15012371DF420051DF21 /* Burr.fs */; };
 		6B4F15042371DF420051DF21 /* Burr.vs in Resources */ = {isa = PBXBuildFile; fileRef = 6B4F15022371DF420051DF21 /* Burr.vs */; };
+		6BC34A13237453C7007C38D6 /* Soul.fs in Resources */ = {isa = PBXBuildFile; fileRef = 6BC34A11237453C7007C38D6 /* Soul.fs */; };
+		6BC34A14237453C7007C38D6 /* Soul.vs in Resources */ = {isa = PBXBuildFile; fileRef = 6BC34A12237453C7007C38D6 /* Soul.vs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		6B4F14FD2371DEEC0051DF21 /* NSArray+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+Extension.swift"; sourceTree = "<group>"; };
 		6B4F15012371DF420051DF21 /* Burr.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Burr.fs; sourceTree = "<group>"; };
 		6B4F15022371DF420051DF21 /* Burr.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Burr.vs; sourceTree = "<group>"; };
+		6BC34A11237453C7007C38D6 /* Soul.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Soul.fs; sourceTree = "<group>"; };
+		6BC34A12237453C7007C38D6 /* Soul.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Soul.vs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +126,28 @@
 		6B4F15002371DF260051DF21 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
+				6BC34A10237453B4007C38D6 /* Soul */,
+				6BC34A0F237453A9007C38D6 /* Burr */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		6BC34A0F237453A9007C38D6 /* Burr */ = {
+			isa = PBXGroup;
+			children = (
 				6B4F15022371DF420051DF21 /* Burr.vs */,
 				6B4F15012371DF420051DF21 /* Burr.fs */,
 			);
-			path = Shaders;
+			path = Burr;
+			sourceTree = "<group>";
+		};
+		6BC34A10237453B4007C38D6 /* Soul */ = {
+			isa = PBXGroup;
+			children = (
+				6BC34A11237453C7007C38D6 /* Soul.fs */,
+				6BC34A12237453C7007C38D6 /* Soul.vs */,
+			);
+			path = Soul;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +210,8 @@
 			files = (
 				6B4F15032371DF420051DF21 /* Burr.fs in Resources */,
 				6B4F15042371DF420051DF21 /* Burr.vs in Resources */,
+				6BC34A13237453C7007C38D6 /* Soul.fs in Resources */,
+				6BC34A14237453C7007C38D6 /* Soul.vs in Resources */,
 				6B4F14EA2371DD990051DF21 /* LaunchScreen.storyboard in Resources */,
 				6B4F14E72371DD990051DF21 /* Assets.xcassets in Resources */,
 			);
